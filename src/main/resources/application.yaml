@@ -1,0 +1,11 @@
+quarkus:
+  mongodb:
+    # 1. Tu cadena de conexión (la que ya tenías)
+    connection-string: mongodb+srv://jhann:RHV0EAdnMtKGpIUl@cluster0.w5g7s40.mongodb.net/consumer_db?appName=Cluster0
+    
+    # 2. LA SOLUCIÓN: Debes especificar el nombre de la base de datos aquí también
+    database: consumer_db 
+
+  http:
+    root-path: /api
+    port: 8081
